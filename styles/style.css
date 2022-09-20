@@ -46,7 +46,7 @@ body {
 
 #top{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: 1fr;
     background-color: blue;
     padding: 0.5em;
@@ -56,12 +56,12 @@ body {
 #img {
     width: 200px;
     height: 200px;
-    grid-column: 2/4;
+    grid-column: 1/2;
  
 }
 
 #name {
-    grid-column: 4/9;
+    grid-column: 2/3;
     color: white;
     margin-top: 150px;
   
