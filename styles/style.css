@@ -46,8 +46,8 @@ body {
 
 #top{
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: repeat(1fr, 8);
+    grid-template-rows: 1fr;
     background-color: blue;
     padding: 0.5em;
 
