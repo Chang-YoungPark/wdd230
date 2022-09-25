@@ -1,0 +1,38 @@
+@media screen and (min-width: 961px) and (max-width: 1980px) {
+
+
+    header, footer, nav, main {max-width: 75rem; margin: auto;}
+
+    /*nav {background-color: #111;} */
+    
+    header {
+        background-color:  #19a8e4;
+        padding: 1rem 2%;
+
+    }
+
+    main h1 {
+        color: #17a8e4;
+    }
+
+    main figure {width: 31%;}
+    main {    
+        column-count: 3;
+    }
+    
+    main div h2 {
+        background-color: midnightblue;
+        color: white;
+        text-align: left;
+        padding: 1rem 1rem;
+    }
+
+    main div h3 {text-align: left;}
+   
+
+    footer{
+        text-align: center;
+        padding: 1rem 2%;
+        background-color:  #19a8e4;
+    }
+}
