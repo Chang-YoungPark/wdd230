@@ -16,15 +16,26 @@
     }
 
     main figure {width: 31%;}
+
     main {    
-        column-count: 3;
+        clear: both;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+ 
+    .white {grid-column: 1/2;  }
+
+    .alignment {grid-column: 2/3; margin-left: 10px;}
+
+    .contrast {grid-column: 3/4; margin-left: 10px; }
+  
     
     main div h2 {
         background-color: midnightblue;
         color: white;
         text-align: left;
-        padding: 1rem 1rem;
+        padding: 1em 1em;
+        margin-left: 10px;
     }
 
     main div h3 {text-align: left;}
