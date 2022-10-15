@@ -34,6 +34,19 @@ header h2 {margin: 0; font-weight: normal;}
 }
 
 /*----------- NAVIGATION --------------*/
+
+nav button{
+    /* veiw width removes it from the left side of the screen */
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555; 
+    border-radius: 10px;
+    text-align: left;
+
+}
+
 nav {
     background-color: #EF476F;
 }
@@ -61,6 +74,8 @@ nav ul li.active a {
     color: #fff;
 }
 
+nav ul {display: none;}
+nav ul.open{display: block;}
 
 /*----------- MAIN --------------*/
 main {
@@ -86,6 +101,7 @@ main p{
 footer {
     background-color: rgb(252, 212, 82);
     padding: .5rem 2%;
+    text-align: center;
 }
 
 #logo-address {
@@ -94,4 +110,22 @@ footer {
 }
 
 
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+    color:#D9D8D5;
+    margin: .2rem 2vw;
+}
 
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+    color:#D9D8D5;
+    margin: .2rem 2vw;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
