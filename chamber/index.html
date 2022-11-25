@@ -12,6 +12,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 <!-- STYLE SHEETS -->
@@ -41,39 +48,74 @@
 <nav>
     <button id="hamburgerBtn" ><span>&#9776;</span><span>X</span></button>
     <ul id="menuNav">
-        <li class="active"><a href="index.html">Discover</a></li>
-        <li><a href="#">Directory</a></li>
-        <li><a href="#">Join</a></li>
-        <li><a href="#">Contact</a></li>    
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>    
     </ul>
-</nav>
-    
+    <div class="social-media">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+</nav>    
     
 <!-- CONTENT HERE -->
-    <main>     
-       <h1>Page Title</h1>
-       <div class="heroimage">
-        <h2>Hero image with call to action</h2>
+    <main class="index">        
+        <div id="hero" class="heroimage">
+            <h1>Welcome to Korea</h1>  
+            <p id="herojoin">
+                Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+            </p>
+               <picture>
+                     <source media="(max-width: 400px)" srcset="images/maple-400.jpg">
+                     <source media="(max-width: 650px)" srcset="images/maple-650.jpg">
+                     <source media="(max-width: 900px)" srcset="images/maple-900.jpg">                     
+                </picture>                              
+            <button type="button" onclick='window.location.href="join.html"' class="btnjoinchamber">Join Chamber</button>
+            
+          
         </div>
-       <div class="event">
-                <h2>event</h2>
-       </div>   
-        <div class="currentweather">
+        <div class="event">
+                 <h2>Ribbon Cutting</h2>
+                 <p>The Diamond Shack</p>
+                 <p>Join us for the grand openning of The Diamond Shack, Thursday at 1:00 p.m</p>
+        </div>   
+         <div class="currentweather">
             <h2>Current Weather</h2>
-        </div>
-        <div class="join">
-            <h2>join</h2>
-        </div>
-
-        <div class="news">
-            <h2>news release</h2>
-        </div>  
-        <div class="spotlight1">
-            <h2>spotlight 1</h2>
-        </div>  
-        <div class="spotlight2">
-            <h2>spotlight 2</h2>
-        </div>    
+            <h2><span id="place">city</span></h2>
+            <p>Current Temperature : <span id="currentTemp">00</span>&deg;</p>
+            <p>Current Wind Speed : <span id="windSpeed">xx</span>mph</p>
+            <img id="weather_icon" src="images/placeholder.png" alt="current weather">
+         </div>
+         <div class="join">
+            <h2><button type="button" onclick='window.location.href="join.html"' class="btnjoin">Join Us!</button></h2>         
+             Discover how to join the chamber of commerce and how it will benefit your organization!
+         </div> 
+         <div class="news">
+             <h2>News Release</h2>
+             Travel around Korea like it’s a game, your quest is to level up!
+             The current one-day post-entry COVID-19 PCR test requirement for travelers entering Korea will no longer be in effect starting October 1, 2022 (00:00 KST). Previously, pre-entry PCR test requirement for entrants to Korea had been lifted on September 3, 2022, which means all inbound travelers to Korea are free from any PCR test requirement effective October 1.
+         </div>  
+         <div class="spotlight1">
+             <h2>Thankful Transport</h2>
+             <picture class="makert">
+                <source media="(max-width: 300px)" srcset="images/tranport.jpg">
+                <source media="(max-width: 500px)" srcset="images/tranport.jpg">
+                <img src="images/tranport.jpg" alt="farmers makert image ">
+            </picture>
+             <p>"We get it there for you!"</p>
+         </div>  
+         <div class="spotlight2">
+             <h2>Code Primera</h2>
+             <picture class="makert">
+                <source media="(max-width: 300px)" srcset="images/coding3.png">
+                <source media="(max-width: 500px)" srcset="images/coding3.png">
+                <img src="images/coding3.png" alt="farmers makert image ">
+            </picture>
+            <p>An after school coding instructional program.</p> 
+         </div>   
     </main>
     <p>
     
@@ -97,5 +139,6 @@
         </div>    
     </footer>
     <script src="js/main.js"></script>  
+     
 </body>
 </html>

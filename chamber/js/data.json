@@ -1,0 +1,76 @@
+{
+    "companies": [
+
+        {
+            "name": "Samsung Electronic",
+            "address": "Suwon, Kyungi, Korea",
+            "phonenumber": "+82 222550114 ",
+            "website": "https://www.samsung.com/sec/",
+            "image": "https://www.samsung.com/sec/static/_images/common/logo_samsung_black.svg"
+        },
+
+        {
+            "name": "LG Electronic",
+            "address": "Twin Tower 128, Yeoui-daero, Yeongdeungpo-gu, Seoul, 07336 Korea",
+            "phonenumber": "+82 37771114",
+            "website": "https://www.lge.co.kr/",
+            "image": "https://www.lge.co.kr/lg5-common/images/header/lg_logo.svg"
+        },
+
+        {
+            "name": "HYUNDAI",
+            "address": "Seocho, Seoul, Korea",
+            "phonenumber": "+82 806006000",
+            "website": "https://www.hyundai.com/kr/en/main",
+            "image": "https://www.hyundai.com/content/dam/hyundai/kr/ko/images/common/h1-logo.png"
+        },
+
+        {
+            "name": "Naver",
+            "address": "Sungnam, Kyungi, Korea",
+            "phonenumber": "+263 2132841841",
+            "website": "https://www.navercorp.com/en",
+            "image": "https://www.navercorp.com/img/ko/header_logo.png"
+        },
+
+        {
+            "name": "POSCO",
+            "address": "6261, Donghaean-ro, Nam-gu, Pohang-si, Gyeongsangbuk-do, Republic of Korea",
+            "phonenumber": "+82 542200114",
+            "website": "https://www.posco.co.kr/",
+            "image": "https://www.posco.co.kr/docs/eng6/jsp/_images/common/posco_ci.png"
+        },
+
+        {
+            "name": "SK Hynix",
+            "address": "2091, Gyeongchung-daero, Bubal-eup, Icheon-si, Gyeonggi-do, Korea",
+            "phonenumber": "+82 3151854114",
+            "website": "https://www.skhynix.com/",
+            "image": "https://www.skhynix.com/img/common/img_logo_m.png"
+        },
+
+        {
+            "name": "HANMI",
+            "address": "14, Wiryeseong-daero, Songpa-gu, Seoul, Korea",
+            "phonenumber": "+82 24109114",
+            "website": "https://www.hanmipharm.com/ehanmi/handler/Home-Start",
+            "image": "https://www.hanmipharm.com/ehanmi/img/main/pc/logo.png"
+        },
+
+        {
+            "name": "KIA",
+            "address": "Seocho, Seoul, Korea",
+            "phonenumber": "+82 234641114",
+            "website": "https://www.kia.com/us/en",
+            "image": "https://www.kia.com/us/content/dam/kia/us/common/kia_logo_white.svg"
+        },
+
+        {
+            "name": "HANWHA",
+            "address": "50, 63-ro, Yeongdeungpo-gu, Seoul, Korea",
+            "phonenumber": "+82 15882299",
+            "website": "https://www.hanwha.com/en.html",
+            "image": "https://www.hanwha.com/content/dam/hanwha/resources/images/common/img_logo.svg"
+        }
+    ]
+}
