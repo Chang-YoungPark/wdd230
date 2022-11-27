@@ -410,6 +410,68 @@ section a {
 	max-width: 100%; /* Images are jerks - Seattle*/
 }
 
+/* -----------------contact --------------*/
+
+
+.main-contact {
+    background-color: #06D6A0;
+    margin: 0 auto;
+	padding: 0.5rem;
+}
+
+.page-title {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: 1rem;
+
+}
+/* inputform */
+.main-contact form div {
+    margin-bottom: 14px;
+    margin-left: 1rem;
+}
+.main-contact label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+.main-contact input[type="text"],
+.main-contact input[type="email"],
+.main-contact textarea {
+    background: white;
+    border: 1px gray solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+.main-contact input[type="text"],
+.main-contact input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+.main-contact textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+.main-contact input[type="submit"] {
+     
+    cursor: pointer;
+    line-height: 1;
+}
+
+.main-contact .contactbtn {
+    border: none;
+    background-color: #EF476F;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}    
+
+
 @media (max-width: 400px) {
 	.list section img {
 		display: block;
