@@ -1,0 +1,102 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+    
+    header, nav, main, footer, #currdate {
+       
+        margin:auto;
+        width: 100%;      
+
+    }
+
+/*----------- BODY --------------*/
+
+
+/*----------- HEADER --------------*/
+
+
+/*----------- NAVIGATION --------------*/
+nav{
+    display: flex;
+    justify-content: left;
+}
+
+nav button {
+    display: none;
+}
+
+nav ul{
+    padding: .2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2vw; 
+}
+
+nav ul li a{
+    border: none;
+    padding: .5rem 1rem; 
+}
+
+/*----------- MAIN --------------*/
+.index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .1fr 1fr 1fr ;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.bountifulimg { grid-area: 1 / 2 / 3 / 4; }
+.california { grid-area: 1 / 1 / 2 / 2; }
+.currentweather { grid-area: 2 / 1 / 3 / 2; }
+.daysweather { grid-area: 3 / 1 / 4 / 2; }
+.summary { grid-area: 3 / 2 / 4 / 5; }
+.bizcontact { grid-area: 2 / 4 / 3 / 5; }
+.calltoaction { grid-area: 1 / 4 / 2 / 5; }
+.bountifulimg{
+    height: auto;
+}
+
+.city-content{
+    margin:auto; 
+}  
+
+#map {
+    width: 600px;
+    height: 450px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr; 
+    grid-template-rows: 80px 80px 30px;  
+}
+
+.logo-image {
+    grid-column: 1/2; 
+   
+}
+.text-address {
+    grid-column:2/3; 
+    text-align: left;
+    margin-top: 20px; 
+}
+.mail-map {
+    grid-column: 3/4; 
+    text-align: right;
+    margin-top: 20px; 
+}
+.social-media {
+    grid-column: 3/4; 
+    grid-row: 2/3;
+    text-align: right;
+    margin-top: 20px; 
+}
+.copyright {
+    grid-column: 1/4; 
+    text-align: center;
+}
+
+
+} /* end of media query */

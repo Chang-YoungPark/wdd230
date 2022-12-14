@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="WD230-Project">
+<meta name="author" content="ChangYoung Park">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Bountiful Foods</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    <img src="images/logo.png"	alt="logo">
+    <div>
+        <h1>Bountiful Foods</h1>        
+    </div>
+</header>    
+<!-- NAVIGATION HERE -->
+<nav>
+    <button id="hamburgerBtn" ><span>&#9776;</span><span>X</span></button>
+    <ul id="menuNav">
+        <li class="active"><a href="index.html">Home</a></li>    
+        <li><a href="fresh.html">Fresh</a></li>
+        <li><a href="about.html">About Us</a></li>    
+    </ul>
+   
+</nav>    
+    
+<!-- CONTENT HERE -->
+    <main class="index">        
+        <div id="bountiful" class="bountifulimg">
+            <h1>Welcome to Bountiful Foods</h1>                   
+        </div>
+        <div class="summary">
+            <h2>Summary of California coast</h2>
+            <p>
+            Coastal California, also known as the California Coastline and the Golden Coast, refers to the coastal regions of the U.S. state of California.
+            The area includes the North Coast, San Francisco Bay Area, Central Coast, and South Coast. 
+            The coastline is slowly eroding due to natural processes and potentially accelerated by climate change, though much more slowly in other places in the United States. 
+            In the last 100 years, the water line has risen less than 6 in (150 mm) along the coast of California. 
+            In the next 100 years, the water is expected to surge as much as 9 ft (2.7 m), bringing into question the fate of the many million dollar homes settled right on the edge of the sea
+            </p>
+        </div>  
+        <div class="totalnumber">
+                 <h2>Special Drink</h2>
+                 <h2>Total Num: <span id="totalnum">000</span></h2>
+        </div>    
+         <div class="calltoaction">
+            <h2><button type="button" onclick='window.location.href="fresh.html"' class="btncall">Fresh</button></h2>         
+            Discover how to order Bountiful foods and how they will benefit your farm!
+         </div> 
+         
+        <div class="currentweather">
+            <h2>Current Weather</h2>
+            <h2><span id="place">city</span></h2>
+            <p>Current Temperature : <span id="currentTemp1">00</span>&deg;</p>
+            <p>Current Wind Speed : <span id="windSpeed1">xx</span>mph</p>
+            <img id="weather_icon" src="images/placeholder.png" alt="current weather">
+         </div>
+         <div class="daysweather">
+            <h2>3 Days Weather</h2>
+            <p><span id="day1">20221215</span>&bull;Temperature:<span id="temp1">10</span></p>
+            <p><span id="day2">20221216</span>&bull;Temperature:<span id="temp2">10</span></p>
+            <p><span id="day3">20221217</span>&bull;Temperature:<span id="temp3">10</span></p> 
+         </div>
+       
+         <div class="bizcontact">
+            <h2>Business Contact</h2>
+            <p>"We get it there for you!"<br>
+               Address: Carlsbad, California, USA<br>                   
+               Tel: +(223)-222-7777<br>
+               Email: contact@bountifulfood.com<br>
+            </p>
+        </div> 
+    </main>
+    <p>
+    
+<!-- FOOTER HERE -->   
+    <footer>     
+        <div class="logo-image">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="text-address">
+            <h3>Bountiful Foods</h3>
+            <p>Carlsbad</p>
+            <p>California, USA</p>
+        </div>      
+        <div class="mail-map">
+            <p>contact@bountifulfood.com</p>
+            <p>+(223)-222-7777</p>
+            <p ><a class="map-link" href="https://goo.gl/maps/x5wQVvqfoNPtsHkT9">Link to Map</a></p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px;color:rgb(56, 56, 216)"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:36px;color:rgb(56, 56, 216)"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube-square" style="font-size:36px;color:rgb(56, 56, 216)"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="myYear"></span> Bountiful Food &bull; ChangYoung Park &bull; WDD230 Project &bull;<span id="lastMod"></span></p>
+        </div>    
+    </footer>
+    <script src="js/main.js"></script>  
+     
+</body>
+</html>
