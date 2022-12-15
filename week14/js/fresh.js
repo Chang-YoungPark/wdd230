@@ -6,6 +6,7 @@ document.querySelector('#myYear').textContent=myYear.getFullYear();
 const now = new Date();
 
 const getdatetime = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
+console.log(getdatetime);
 
 // get the last modified date and time
 const dateTime = document.lastModified;
@@ -56,32 +57,50 @@ x.onclick = toggleMenu;
   let total_protein = 0;
   let total_fat = 0;
   let total_sugar = 0;
-  let total_calories; 
-  let fruit ="";
+  let total_calories = 0; 
+  let fruit1 ="";
+  let fruit2 ="";
+  let fruit3 ="";
+  let text = "";
+  const nutritions = [];
   
   function mycal(){
-    let fLen = receipt.length;
+    total_carbohydrates = 0;
+    total_protein = 0;
+    total_fat = 0;
+    total_sugar = 0;
+    total_calories = 0; 
+
+    let fLen = foods.length;
     for ( let i = 0; i < fLen; i++) {
-      fruit = document.getElementById("select1").value;   
-      fruit.forEach (function(value, key) {     
-        if ( value.name == fruit ) {
-               
-          total_carbohydrates += Number(value.carbohydrates); 
-          total_protein += Number(value.protein) ;
-          total_fat += Number(value.fat) ;
-          total_sugar += Number(value.sugar) ;
-          total_calories += Number(value.calories) ;    
-
+      fruit1 = document.getElementById("select1").value;   
+      fruit2 = document.getElementById("select2").value;
+      fruit2 = document.getElementById("select2").value;
+     
+      foods.forEach (function(value, key) {      
+        if ( value.name == fruit1 || value.name == fruit2 || value.name == fruit3 ) {  
+          total_carbohydrates += Number(value.nutritions.carbohydrates); 
+          total_protein += Number(value.nutritions.protein) ;
+          total_fat += Number(value.nutritions.fat) ;
+          total_sugar += Number(value.nutritions.sugar) ;
+          total_calories = total_carbohydrates + total_protein +  total_fat + total_sugar ;    
         }      
-      })       
-    }
-    
-    text += "<li> total carbohydrates :" + sum + '</li>';
-    text += "<li> total protein:" + tax_rate + '</li>';
-    text += "<li> total fat :" + tax + '</li>' ; 
-    text += "<li> total sugar :" + tax + '</li>' ; 
-    text += "<li> total calories :" + tax + '</li>' ;    
-    document.getElementById("result").innerHTML = text; 
+      })           
+      
+    }  
+      
+      text = "";
+      text += "<br>" 
+      text += "<li> Order date : " + getdatetime + '</li>';
+      text += "<li> total carbohydrates : " + Math.round(total_carbohydrates) + '</li>';
+      text += "<li> total protein : " + Math.round(total_protein) + '</li>';
+      text += "<li> total fat : " + Math.round(total_fat) + '</li>' ; 
+      text += "<li> total sugar : " + Math.round(total_sugar) + '</li>' ; 
+      text += "<li> total calories : " + Math.round(total_calories) + '</li>' ; 
+      text += "<br>" 
+      document.getElementById("result").innerHTML = text; 
   }
-
+      
+ 
+   
 // Original Directory End  

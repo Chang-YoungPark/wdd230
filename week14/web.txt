@@ -1,0 +1,74 @@
+After carefully reviewing the Company Description, Content Specifications, and Assessment checklist, 
+I have created a grading checklist that hopefully contains everything the course designers want you to demonstrate. 
+This is the standard we will use to grade your assignment.
+
+HTML (6)
+6/6 All pages are HTML5 valid.
+
+WAVE (6)
+6/6 All pages pass the contrast test in the wave tool.
+
+CSS (8)
+6/6 All pages are CSS valid.
+
+2/2 The site uses CSS normalization and three additional css files.
+
+Overall Site Features (23)
+3/3 The site uses JavaScript to implement a hamburger drop down.
+
+3/3 Google Font linked in <head> tag on each page
+
+3/3 The website follows PARC and typography design principles
+
+3/3 Wayfinding is working
+
+2/2 Custom Site Logo as a webP format
+
+2/2 All pages have appropriate title tags containing the website and page name.
+
+2/2 Footer contains contact information
+
+2/2 Footer contains the last modified date using JavaScript
+
+3/3 Footer contains 3 social media links
+
+Home Page (20)
+2/2 Business Contact Information
+
+2/2 Summary of a California coast area
+
+1/1 Call to Action – link to “Fresh” page
+
+3/3 Current JSON weather information current for Carlsbad CA
+
+5/5 Display total number of specially drink forms submitted (from fresh page form)
+
+5/5 Three-day weather forecast
+
+2/2 The pages weigh 500k or less.
+
+Fresh page (27)
+3/3 The form demonstrates proper eye tracking and validates input.
+
+2/2 Standards inputs (first name, email, phone, special instructions)
+
+3/3 Create three “select” dropdowns with all fruits listed (39 fruit types loaded from a JSON file)
+
+1/1 Styled submission button that does NOT open a new page
+
+7/7 Display 7 form values on page using JS
+
+1/1 Display the order date
+
+5/5 Display total carbohydrates, protein, fat, sugar, and calories from three selected fruits
+
+2/2 The pages weigh 500k or less. 
+
+About Us (10)
+3/3 historical information
+
+2/2 contact information
+
+3/3 Google Map
+
+2/2 The pages weigh 500k or less.

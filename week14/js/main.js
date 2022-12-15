@@ -43,9 +43,9 @@ fetch(apiURL)
 
  const apiURL2 = "//api.openweathermap.org/data/2.5/forecast/daily?id=5334223&cnt=3&appid=fb8a7138d682ebc6e94fa48083ace078"
  fetch(apiURL2)
- .then((response2) => response2.json())
- .then((weatherInfo2) => {
-    
+ .then((response) => response.json())
+ .then((weatherInfo2) => {   
+   console.log(weatherInfo2); 
    document.getElementById('place2').innerHTML=weatherInfo2.city.name;
    document.getElementById('day1').innerHTML=weatherInfo2.list.dt[0];
    document.getElementById('temp1').innerHTML=weatherInfo2.list.temp.day[0];
